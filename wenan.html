@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>樱桃生成器 - 樱桃方块</title>
+		<link rel="icon" type="image/x-icon" href="images/logo.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/yxh.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>樱桃生成器</h1>
+						<p>CherryBlock</p>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								<span class="image main"><img src="images/pic07.jpg" alt="" /></span>
+								<body onload="onload()">
+                                    <div class="container">
+                                        <h1>快速生成开服专区维护文案</h1>
+                                        <div class="row">
+                                            <div class="col-6 col-12-xsmall">
+                                                <form action="javascript:void(0);" autocomplete="off">
+                                                    <div class="form-group">
+                                                        <lable for="subject">时间：</lable>
+                                                        <input type="text" id="subject" class="form-control" placeholder="8月19日11:30~12:00" required />
+                                                    </div>
+													<h1></h1>
+                                                    <div class="form-group">
+                                                        <lable for="event">事件：</lable>
+                                                        <input type="text" id="event" class="form-control" placeholder="Mod升级" required />
+                                                    </div>
+													<h1></h1>
+                                                    <div class="form-group">
+                                                        <lable for="event2">结束后：</lable>
+                                                        <input type="text" id="event2" class="form-control" placeholder="需更新客户端，且全服发放60水" required />
+                                                    </div>
+                                                    <h1></h1>
+                                                    <input type="submit" value="生成" class="button primary" onclick="generate()" />
+                                                </form>
+                                            </div>
+                                            <div class="col-12">
+                                                <textarea id="result" onchange="auto_grow(this)" oninput="auto_grow(this)"
+													placeholder="各位亲爱的玩家：开服专区服务器将于8月19日11:30~12:00进行临时维护（如有变动将会另行发布通知），维护期间将暂时无法进入服务器，还请各位玩家提前做好下线或不上线的更新准备，为各位带来的不便敬请谅解。本次维护将会更新Mod升级。 维护结束后需更新客户端，且全服发放300水晶补偿，30级以上玩家可领取，感谢您对开服专区的支持。
+													"></textarea>
+
+													<h1> </h1>
+													<h3>Text-demo0</h3>
+													<p>各位亲爱的玩家：开服专区服务器将于8月19日11:30~12:00进行临时维护（如有变动将会另行发布通知），维护期间将暂时无法进入服务器，还请各位玩家提前做好下线或不上线的更新准备，为各位带来的不便敬请谅解。本次维护将会更新Mod升级。 维护结束后需玩家更新Mod文件夹，且全服发放60水晶补偿，感谢您对开服专区的支持。</p>
+
+													<h1> </h1>
+													<h3>Text-demo1</h3>
+													<p>各位亲爱的玩家：开服专区服务器将于8月19日11:30~13:00进行临时维护（如有变动将会另行发布通知），维护期间将暂时无法进入服务器，还请各位玩家提前做好下线或不上线的更新准备，为各位带来的不便敬请谅解。本次维护将会更新Forge、Mod和其他优化。 维护结束后需更新客户端，且全服发放300水晶补偿，30级以上玩家可领取，感谢您对开服专区的支持。</p>
+
+													<h1> </h1>
+													<h3>Text-demo2</h3>
+													<p>各位亲爱的玩家：开服专区服务器将于8月19日11:30~11:40进行临时维护（如有变动将会另行发布通知），维护期间将暂时无法进入服务器，还请各位玩家提前做好下线或不上线的更新准备，为各位带来的不便敬请谅解。本次维护将会更新问题修复和优化。 维护结束后将全服发放60水晶补偿，感谢您对开服专区的支持。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div id="footer">
+                                        
+                                    </div>
+                                </body>
+								</li>
+							</ul>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2> </h2>
+							<p> </p>
+							<ul class="actions">
+								<li><a href="https://cherryblock.3366meishiqun.com" class="button">Back</a></li>
+							</ul>
+						</section>
+						<section>
+
+							<h2> </h2>
+							<dl class="alt">
+
+								<dt> </dt>
+								<dd><a href="http://kaseidis.gitee.io/interesting_gadgets/marketing_generator/index.htm">Made by: Kasei</a></dd>
+							
+							</dl>
+							</ul>
+						</section>
+						<p class="copyright">&copy; KFZQ MinecraftServer - <a href="https:cherryblock.3366meishiqun.com">樱桃方块APP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+		<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+            <script src="assets/kfzq-wenan.js"></script>
+
+	</body>
+</html>
